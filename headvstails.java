@@ -1,18 +1,20 @@
 package headsvstails;
 import java.util.Scanner;
 public class headvstails {
-		 public static void main(String[] args) {
-		        float harmonicSeriesSum = 1;
-		        Scanner sc=new Scanner(System.in);
-		        System.out.print("Enter number for print Harmonic series: ");
-		int n= sc.nextInt();
-		for(int i=1;i<=n;i++){
-		    
-		    System.out.print("1/"+i+" + ");
-		    harmonicSeriesSum += (float)1 / i;
-		}
-		
-		System.out.println("Sum of Harmonic series is: "+harmonicSeriesSum);
-
-		    }
-		}
+	public static void main(String[] args) {
+	int n;
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter a number");
+    n = sc.nextInt();
+   
+    for(int i = 2; i< n; i++) {
+       while(n%i == 0) {
+          System.out.println(i+" ");
+          n = n/i;
+       }
+    }
+    if(n>2) {
+       System.out.println(n);
+    }
+ }
+}
