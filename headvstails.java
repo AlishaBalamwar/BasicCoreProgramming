@@ -2,15 +2,14 @@ package headsvstails;
 import java.util.Scanner;
 public class headvstails {
 	public static void main(String[] args) {
-		 int a, b, t;  
-	       Scanner sc = new Scanner(System.in);  
-	       System.out.println("Enter the two values which we want to swap");  
-	       a = sc.nextInt();  
-	       b = sc.nextInt();  
-	       System.out.println("Before swapping numbers: "+a +"  "+ b);  
-	       t = a;  
-	       a = b;  
-	       b = t;  
-	       System.out.println("After swapping: "+a +"   " + b);  
-	    }    
-	}  
+		System.out.print("enter the number: ");
+        Scanner s = new Scanner(System.in);
+        int x = s.nextInt();
+        if ( x % 2 == 0 )        {
+            System.out.println(x+" number is even");
+        }
+        else{
+            System.out.println(x+" number is Odd");
+        }
+    }
+}
