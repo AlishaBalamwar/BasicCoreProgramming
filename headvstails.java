@@ -2,14 +2,14 @@ package headsvstails;
 import java.util.Scanner;
 public class headvstails {
 	public static void main(String[] args) {
-		System.out.print("enter the number: ");
-        Scanner s = new Scanner(System.in);
-        int x = s.nextInt();
-        if ( x % 2 == 0 )        {
-            System.out.println(x+" number is even");
-        }
-        else{
-            System.out.println(x+" number is Odd");
+		System.out.print("Enter a character : ");
+        Scanner sc = new Scanner(System.in);
+        char ch = sc.next().charAt(0);
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I'
+                || ch == 'O' || ch == 'U') {
+            System.out.println(ch + " character is an vowel");
+        } else {
+            System.out.println(ch + " character is a consonant");
         }
     }
 }
